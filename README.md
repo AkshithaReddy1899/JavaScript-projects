@@ -1,3 +1,3 @@
 # JavaScript-projects
 
-This repositary includes javascript projects from beginner to advanced.
+This repositary includes javascript projects done by me in my learning period
