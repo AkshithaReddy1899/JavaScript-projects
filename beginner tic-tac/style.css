@@ -1,0 +1,97 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #00A86B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h4 {
+    padding: 20px 10px 10px 10px;
+    margin-top: 10px;
+}
+
+.player,
+.reset {
+    margin: 0px 40px;
+}
+
+.status {
+    display: flex;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.grid {
+    background-color: #036944;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 12px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 5p #036944;
+}
+
+.cell {
+    background-color: #00A86B;
+    color: #ffdb58;
+    width: 120px;
+    height: 120px;
+}
+
+.PlayerX {
+    background-image: url('https://image.shutterstock.com/image-illustration/3d-alphabet-letter-x-white-260nw-1532840060.jpg');
+    background-size: 100%;
+}
+
+.PlayerO {
+    background-image: url('https://i.pinimg.com/236x/dc/24/31/dc24316c81f37bec7d4d4596e9549982.jpg');
+    background-size: 100%;
+}
+
+@media screen and (max-width:470px) {
+    .container {
+        margin: 10px;
+        padding: 5px;
+    }
+    .grid {
+        grid-gap: 6px;
+        margin-top: 10px;
+    }
+    .cell {
+        background-color: #00A86B;
+        color: #ffdb58;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .container {
+        margin: 5px;
+        padding: 5px;
+    }
+    .grid {
+        grid-gap: 4px;
+        margin-top: 5px;
+    }
+    .cell {
+        background-color: #00A86B;
+        color: #ffdb58;
+        width: 80px;
+        height: 80px;
+    }
+}
