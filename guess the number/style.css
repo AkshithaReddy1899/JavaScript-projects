@@ -1,0 +1,101 @@
+html {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    position: relative;
+    padding: 20px;
+    height: 300px;
+    background-color: #eddcd2;
+    font-family: sans-serif;
+    transition: 6s ease-in;
+}
+
+header {
+    text-align: center;
+    color: #233d4d;
+    margin-top: 30px;
+}
+
+li {
+    margin: 10px;
+}
+
+.rules {
+    text-align: left;
+}
+
+#start {
+    margin: 10px auto 5px auto;
+}
+
+form {
+    text-align: center;
+    margin-top: 40px;
+    transition: 8s ease-out;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#prevGuessLabel {
+    float: left;
+    margin: 15px;
+}
+
+button {
+    background-color: #a5a58d;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+#guess {
+    padding: 10px;
+    width: 30%;
+    background-color: #edede8;
+}
+
+#submit {
+    background-color: #a5a58d;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.game {
+    display: none;
+}
+
+.restart {
+    display: none;
+    text-align: center;
+    margin: 10px auto;
+}
+
+#hint {
+    margin: 50px auto;
+    text-align: center;
+}

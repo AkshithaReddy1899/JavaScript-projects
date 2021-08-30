@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the number</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Guess the number</h2>
+    </header>
+    <main>
+        <div class="rules">
+            <b>Rules</b>:
+            <ol>
+                <li>
+                    You have to guess a random number between 1 to 100 inclusive of both numbers.
+                </li>
+                <li>You will be given 10 changes to guess the number correctly.</li>
+                <li>
+                    If you guess the number in your 10 chances, you win, or else better luck next time.
+                </li>
+            </ol>
+        </div>
+        <button id="start">Start Game</button>
+        <div class="game">
+            <form id="myForm" autocomplete="off">
+                <input type="number" id="guess" onclick="document.getElementById('guess').value = ''" min="1" max="100" />
+                <input type="submit" id="submit" value="Check">
+            </form>
+            <div id="prevGuessLabel">Previous guesses :
+                <b id="prevGuess"></b>
+            </div><br/><br/>
+            <div id="hint"></div>
+        </div>
+        <div id="gameOver"></div>
+        <button id="restart" class="restart" onClick="reload()">Restart</button>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
