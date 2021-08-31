@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>To-Do List</h2>
+    <main>
+        <form id="myForm" autocomplete="off">
+            <input type="text" id="task" placeholder="Task..." onclick="this.value=''">
+            <button type="submit" id="submit">Add</button>
+        </form>
+        <div id="error"></div>
+        <button id="stopButton" onclick="stop()">OK</button>
+        <section>
+            <ul id="list"></ul>
+
+        </section>
+    </main>
+    <button id="clear" value="Reload Page">Clear</button><br/>
+    <span id="instructions"></span>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

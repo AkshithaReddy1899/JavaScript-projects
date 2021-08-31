@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    text-align: center;
+    margin: 40px auto;
+    background-color: #2a9d8f;
+}
+
+h2 {
+    color: #264653;
+}
+
+#task {
+    background-color: #f4f3ee;
+    border: none;
+    padding: 5px;
+    margin: 20px;
+    width: 40%;
+    outline: none;
+}
+
+button {
+    background-color: #f4a261;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 15%;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+#stopButton {
+    display: none;
+}
+
+li {
+    list-style: none;
+    color: #e9c46a;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin: 20px auto;
+}
+
+li:hover {
+    color: #e76f51;
+}
+
+div {
+    margin: 10px;
+}
+
+#instructions,
+#clear {
+    bottom: 0;
+    position: relative;
+    font-weight: bold;
+    margin: 0px auto;
+}
+
+#clear {
+    bottom: 10px;
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    #task {
+        width: 25%;
+        height: 2rem;
+    }
+    #submit {
+        width: 10%;
+        height: 2.6rem;
+    }
+}
