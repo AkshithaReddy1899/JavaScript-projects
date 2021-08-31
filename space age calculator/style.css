@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+html {
+    width: 100vw;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    overflow-x: hidden;
+    font-family: sans-serif;
+    position: relative;
+    background-image: url("https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=770&q=80");
+}
+
+.text-heading {
+    color: whitesmoke;
+}
+
+.details {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+form {
+    margin: 30px auto;
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+input,
+.submit,
+select {
+    padding: 8px;
+    background-color: #acacb4;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    margin: 10px auto;
+    color: black;
+}
+
+.submit {
+    margin: 15px auto;
+    width: 200px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    background-color: #acacb4;
+}
+
+input:focus {
+    background-color: #acacb4;
+}
+
+#myForm b {
+    margin-bottom: 10px;
+}
+
+#month,
+#year,
+#date {
+    width: 75px;
+    height: auto;
+    margin: 2px;
+}
+
+.planets {
+    display: none;
+    grid-template-rows: repeat(1);
+    justify-content: center;
+    text-align: center;
+    margin: 10px auto;
+    width: 220px;
+}
+
+#heading {
+    text-align: center;
+    margin: 20px auto;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.result {
+    position: relative;
+    color: black;
+}
+
+.btn:hover {
+    text-decoration: none;
+}
+
+.modal-footer {
+    margin: 10px;
+    padding: 5px;
+}
+
+.close {
+    outline: none;
+    border: none;
+    margin: 10px;
+    box-shadow: none;
+    width: 70px;
+    height: auto;
+    font-size: 16px;
+}
+
+.close:hover {
+    text-decoration: none;
+}
+
+.btn:active,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#error {
+    color: red;
+}
+
+#refresh {
+    display: none;
+    background-color: #acacb4;
+    outline: none;
+    border: none;
+    padding: 10px;
+    height: 40px;
+    width: auto;
+    text-align: center;
+    margin: 20px auto;
+}
+
+@media only screen and (min-width: 420px) {
+    .planets {
+        grid-template-columns: repeat(2, 250px);
+        grid-gap: 3;
+    }
+    button {
+        margin: 10px auto;
+        width: 250px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    .planets {
+        grid-template-columns: repeat(2, 300px);
+        grid-gap: 3;
+    }
+    button {
+        margin: 10px auto;
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    .planets {
+        grid-template-columns: repeat(3, 320px);
+        grid-gap: 1.5;
+    }
+    button {
+        margin: 20px auto;
+        width: 320px;
+        height: auto;
+    }
+}

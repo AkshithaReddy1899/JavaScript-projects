@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space age calculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://images.unsplash.com/photo-1590732488817-d34f0d6237a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHBsYW5ldHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" rel="shortcut icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container text-center">
+        <main class="details">
+            <h4 class="text-heading">To find your space age, please enter your birthday below.</h4>
+            <form id="myForm">
+                <input type="number" placeholder="Year" id="year">
+                <select name="drop-down" id="month">
+            <option disabled hidden selected value=" ">Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+                <select name="dropdown" id="date">
+            <option disabled hidden selected value=" ">Date</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select><br/>
+                <button type="submit" id="submit" class="submit">Submit</button>
+            </form>
+        </main>
+        <h3 id="heading" class="text-heading"></h3>
+        <section class="planets">
+            <button class="btn mercury" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/mercury.png " alt="mercury" width="100%" title="Mercury"></button>
+            <button class="btn venus" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/venus.png" alt="Venus" width="100%" title="Venus"></button>
+            <button class="btn earth" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2019/09/earth.png" alt="Earth" width="100%" title="Earth"></button>
+            <button class="btn mars" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/mars.png" alt="Mars" width="100%" title="Mars"></button>
+            <button class="btn jupiter" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/jupiter.png" alt="Jupiter" width="100%" title="Jupiter"></button>
+            <button class="btn saturn" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/saturn.png" alt="Saturn" width="100%" title="Saturn"></button>
+            <button class="btn uranus" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/uranus.png" alt="Uranus" width="100%" title="Uranus"></button>
+            <button class="btn neptune" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/neptune.png" alt="Neptune" width="100%" title="Neptune"></button>
+            <button class="btn pluto" data-toggle="modal" data-target="#basicModal"><img src="https://nineplanets.org/wp-content/uploads/2020/03/pluto.png" alt="Pluto" width="100%" title="Pluto"></button>
+        </section>
+        <button type="button" id="refresh" onClick="location.href=location.href" class="text-center">Try another date?</button>
+
+        <div id="error"></div>
+
+        <div class="modal fade mt-6" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 id="result" class="result"></h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="close" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
