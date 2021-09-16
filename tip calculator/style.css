@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #68C3D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+input,
+select {
+    height: 50px;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+.container {
+    background-color: whitesmoke;
+}
+
+.form-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form-control {
+    background-color: #eff3fa;
+    text-align: right;
+}
+
+.form-control:focus {
+    border: 2px solid #568EA3;
+    box-shadow: none;
+}
+
+.form-select:focus {
+    border: 2px solid #568EA3;
+    box-shadow: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#bill {
+    background: url('https://cdn-icons-png.flaticon.com/128/591/591965.png') no-repeat 4%;
+    background-size: 20px 20px;
+}
+
+#people {
+    background: url('https://img.icons8.com/ios-glyphs/2x/person-male.png') no-repeat 3%;
+    background-size: 20px 20px;
+}
+
+#submit {
+    background-color: #68C3D4;
+    width: 70px;
+    height: 35px;
+}
+
+.column-2 {
+    background-color: #568EA3;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    color: red;
+}

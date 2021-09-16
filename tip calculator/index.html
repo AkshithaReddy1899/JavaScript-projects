@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip calculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="container rounded-3 m-4 p-4">
+        <div class="row d-flex flex-sd-column justify-content-between">
+            <div class="column column-1 col-sm-12 col-md-6">
+                <form id="jsForm">
+
+                    <label for="bill" class="form-label">Bill</label>
+                    <input type="number" name="bill" id="bill" class="form-control"><br>
+                    <p class="error" id="bill-error"></p>
+
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="select"> 
+                        <option value="" selected disabled><b>Tip</b></option>
+                        <option value=".05">5%</option>
+                        <option value=".1">10%</option>
+                        <option value="1.5">15%</option>
+                        <option value="2.5">25%</option>
+                        <option value="5">50%</option>
+                        <option value="custom">Custom</option>
+                      </select>
+                    <p class="error" id="tip-error"></p>
+                    <br>
+
+
+                    <label for="people" class="form-label">
+                  Number of People</label>
+                    <input type="number" name="people" class="form-control" id="people">
+                    <p class="error" id="people-error"></p>
+                    <br><br>
+
+
+                    <div class="text-center">
+                        <button type="submit" class="rounded-3" id="submit">OK</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="column column-2 col-sm-12 col-md-6 rounded-3 p-3 mt-4">
+                <div class="result">
+                    <br><br>
+                    <div class="d-flex justify-content-between">
+                        <div><b>Tip Amount</b><small>/person</small></div>
+                        <h2 class="result-tip" id="resultTip">0.00</h2>
+                    </div>
+                    <br><br>
+                    <div class="d-flex justify-content-between">
+                        <div><b>Total</b><small>/person</small></div>
+                        <h2 class="result-amount" id="resultAmount">0.00</h2>
+                    </div>
+                    <br>
+                </div>
+                <br><br><br>
+                <small class="footer">Challenge by &nbsp;<a href="https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX"> Frontend mentor</a>&nbsp;coded by &nbsp;<a href="https://github.com/AkshithaReddy1899"> Akshitha reddy</a></small>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
