@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>to-do-list</title>
+</head>
+
+<body>
+    <nav>
+        <h2>To-Do List</h2>
+
+    </nav>
+    <div>
+        <button></button>
+    </div>
+    <main>
+        <form id="myForm" autocomplete="off">
+            <input type="text" id="task" placeholder="Task..." onclick="this.value = ' '">
+            <button type="submit" id="submit">Add</button>
+        </form>
+
+        <p id="error"></p>
+        <section>
+            <h2 class="section-heading">Your Tasks</h2>
+            <div id="no-task">No tasks yet..</div>
+            <ul id="list"></ul>
+        </section>
+    </main><br/>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
